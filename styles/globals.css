@@ -35,7 +35,19 @@ body {
 }
 
 .dropdown {
-    @apply relative right-0 top-full mt-0 w-auto p-5 rounded-sm min-w-full flex flex-col gap-2 justify-end items-end bg-slate-400 z-20 ;
+    @apply relative right-0 top-full mt-0 w-auto p-3 rounded-sm min-w-full flex flex-col gap-1 justify-end items-end bg-slate-400 z-20 ;
   }
+
+.black_btn_card {
+    @apply rounded-2xl border border-black bg-black py-1.5 px-5 text-white hover:bg-gray-400 hover:text-black text-sm justify-between w-full flex flex-row ;
+}
+
+.transition_time {
+    transition-duration: 800ms;
+}
+
+.transition_time_long {
+    transition-duration: 3000ms;
+}
 
 
