@@ -11,7 +11,6 @@ const layout = ({children} : any) => {
     <html lang="en">
         <body>
             <Nav />
-
             <main className="main">
                 {children}
             </main>

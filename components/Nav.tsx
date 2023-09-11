@@ -43,7 +43,7 @@ const Nav = () => {
 
     return (
         <nav className='w-full mb-16 pt-3 bg-slate-600 relative top-0 h-auto '>
-            <div className='w-full justify-around bg-white grid-cols-2 '>
+            <div className='w-full justify-around bg-white'>
                 <button type='button' className='black_btn_nav'>
                     Home
                 </button>

@@ -43,7 +43,7 @@ body {
 }
 
 .transition_time {
-    transition-duration: 800ms;
+    transition-duration: 500ms;
 }
 
 .transition_time_long {
