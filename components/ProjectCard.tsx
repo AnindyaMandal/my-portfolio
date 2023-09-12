@@ -30,26 +30,38 @@ const ProjectCard = (info : ProjectInfo) => {
     }, 1500)
   }
 
+  const waitBeforeExpand = () => {
+    setTimeout(() => {
+      if (!toggleExpandedCardView) {
+        setToggleExpandedCardView(true)
+      }
+    }, 0)
+  }
+
 
   return (
     
         <div 
             className={setToggleCSS()}
-            onMouseEnter={() => setToggleExpandedCardView((prev) => (!prev))}
+            onMouseEnter={() => waitBeforeExpand()}
             onMouseLeave={() => waitBeforeCollapse()}
             >
             <div>
-              <h1>{info.name}</h1>  
-              {toggleExpandedCardView && 
-              <>
-                <br></br>
-                <p>{info.description}</p>
-              </>
-              }
+              <Link href={info.route_name}>
+                {!toggleExpandedCardView && <h3>{info.name}</h3>}
+                  {toggleExpandedCardView && 
+                  <>
+                    <h1>{info.name}</h1>
+                    <br></br>
+                    <p>{info.description}</p>
+                  </>
+                  }
+              </Link>
+              
             </div>
             
             {toggleExpandedCardView && 
-            <div className="sm:hidden">
+            <div className="">
               <iframe className="transition_time_long" src={info.vid_url} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 
             </div>

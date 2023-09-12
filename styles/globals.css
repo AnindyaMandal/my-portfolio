@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h1 {
+      @apply text-2xl font-bold ;
+    }
+    h2 {
+      @apply text-xl font-semibold;
+    }
+  }
+
 body {
     font-family: "Noto Sans", sans-serif;
 }
@@ -10,17 +19,15 @@ body {
     width: 100vw;
     min-height: 100vh;
     margin-top: auto;
-    position: fixed;
+    height: auto;
     display: flex;
     justify-content: center;
     /* padding: 120px 24px 160px 24px; */
     padding-top: auto;
     padding-right: 24px;
-    padding-bottom: 160px;
     padding-left: 24px;
     pointer-events: auto;
 }
-
 .app {
     @apply relative z-10 flex justify-center items-center 
     flex-col max-w-7xl mx-auto sm:px-16 px-6 mt-4 bg-red-300;

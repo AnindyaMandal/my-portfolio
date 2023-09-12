@@ -14,6 +14,7 @@ const layout = ({children} : any) => {
             <main className="main">
                 {children}
             </main>
+            {/* {children} */}
         </body>
     </html>
   )
