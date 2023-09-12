@@ -46,11 +46,14 @@ const Nav = () => {
 
 
     return (
-        <nav className='w-full mb-0 pt-0 bg-slate-600 relative top-0 h-auto '>
-            <div className='w-full justify-around bg-white'>
+        <nav className='w-full mb-0 pt-0 relative top-0 h-auto bg-zinc-800'>
+            <div className='w-full justify-around'>
+                <Link href='/Home'>
                 <button type='button' className='black_btn_nav'>
                     Home
                 </button>
+                </Link>
+                
                 
                 <button type='button' className='black_btn_nav' onClick={() => setToggleProjects((prev) => (!prev))}>
                     Projects ↓

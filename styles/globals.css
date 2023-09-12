@@ -31,7 +31,7 @@ body {
 }
 .app {
     @apply relative z-10 flex justify-center items-center 
-    flex-col max-w-7xl mx-auto sm:px-16 px-6 mt-4 bg-red-300;
+    flex-col max-w-7xl mx-auto sm:px-16 px-6 mt-4;
 }
 
 .black_btn_nav {
@@ -39,15 +39,15 @@ body {
 }
 
 .black_btn_prj {
-    @apply rounded-2xl border border-white bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm items-center justify-center w-full ;
+    @apply rounded-2xl border border-white bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black hover:border-black text-center text-sm items-center justify-center w-full ;
 }
 
 .dropdown {
-    @apply relative right-0 top-full mt-0 w-auto p-3 rounded-sm min-w-full flex flex-col gap-1 justify-end items-end bg-slate-400 z-20 ;
+    @apply relative right-0 top-full mt-0 w-auto p-3 rounded-sm min-w-full flex flex-col gap-1 justify-end items-end z-20 bg-inherit;
   }
 
 .black_btn_card {
-    @apply rounded-2xl border border-white bg-black py-1.5 px-5 text-white hover:bg-gray-400 hover:text-black text-sm justify-between w-full flex flex-row ;
+    @apply rounded-2xl border border-white bg-black py-1.5 px-5 text-white hover:bg-gray-400 hover:text-black hover:border-black text-sm justify-between w-full flex flex-row ;
 }
 
 .transition_time {

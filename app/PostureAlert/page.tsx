@@ -184,11 +184,11 @@ export default function PostureAlert() {
             <h2>Project Demo</h2>
             <br></br>
             <br></br>
-            <h3 className="text-blue-500"><a href="https://youtu.be/UUlc9Cae1RA" >Storyboard Video</a></h3>
-            <h3 className="text-blue-500"><a href="https://www.youtube.com/watch?v=5xFqm6QPP1I" >Project Demo Video</a></h3>
+            <h2 className="text-blue-800 underline"><a href="https://youtu.be/UUlc9Cae1RA" >Storyboard Video</a></h2>
+            <h2 className="text-blue-800 underline"><a href="https://www.youtube.com/watch?v=5xFqm6QPP1I" >Project Demo Video</a></h2>
             <br></br>
-            <h3 className="text-blue-500"><a href="https://github.com/HarprabhGill/PostureAlert" >Check out the source code
-                    here!</a></h3>
+            <h2 className="text-blue-800 underline"><a href="https://github.com/HarprabhGill/PostureAlert" >Check out the source code
+                    here!</a></h2>
     
     
             <br></br>
