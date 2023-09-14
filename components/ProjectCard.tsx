@@ -45,7 +45,7 @@ const ProjectCard = (info: ProjectInfo) => {
 					<>
 						<div className="flex gap-x-10">
 							<h1>{info.name}</h1>
-							<Link href={info.route_name}>
+							<Link href={"/" + info.route_name}>
 								<button type="button" className="learn_btn">
 									Learn More
 								</button>
