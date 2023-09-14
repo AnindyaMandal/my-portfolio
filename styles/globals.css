@@ -35,7 +35,7 @@ body {
 }
 
 .black_btn_nav {
-	@apply rounded-none border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm items-center justify-center w-1/2;
+	@apply rounded-none border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-base h-10 items-center justify-center w-1/2;
 }
 
 .black_btn_prj {
@@ -64,4 +64,9 @@ body {
 
 .link-primary {
 	@apply text-blue-800 underline;
+}
+
+.pdf_view {
+	width: 75vw;
+	height: 75vw;
 }

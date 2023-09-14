@@ -54,7 +54,8 @@ const Nav = () => {
 
 	const poseUnlockerInfo: ProjectInfo = {
 		name: "Pose -> Phone Unlocker",
-		description: "",
+		description:
+			"Our project his time was to design two phone unlock interfaces, one touch/gesture based, and the other using any of the other sensors that are available on a smartphone. Our first design approach was touch-based. The idea was to allow users to open their phones with a sequence of origami folds as passwords. Our second design approach was camera based. The idea was to use the teachable machine to train a model using our whole bodies as letters. These letters would be the letters for the passcode.",
 		vid_url:
 			"https://www.youtube.com/embed/Cgz3YSwVtCY?si=YI1Z1-m1gPvNXVop",
 		route_name: "PhoneUnlocker",
@@ -62,11 +63,11 @@ const Nav = () => {
 
 	return (
 		<nav
-			onMouseLeave={() => waitBeforeCollapse()}
+			// onMouseLeave={() => waitBeforeCollapse()}
 			className="w-full mb-0 pt-0 relative top-0 h-auto bg-zinc-800"
 		>
 			<div className="w-full justify-around">
-				<Link href="/Home">
+				<Link href="/">
 					<button type="button" className="black_btn_nav">
 						Home
 					</button>
