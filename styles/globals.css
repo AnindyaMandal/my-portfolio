@@ -3,59 +3,61 @@
 @tailwind utilities;
 
 @layer base {
-    h1 {
-      @apply text-2xl font-bold ;
-    }
-    h2 {
-      @apply text-xl font-semibold;
-    }
-  }
+	h1 {
+		@apply text-2xl font-bold;
+	}
+	h2 {
+		@apply text-xl font-semibold;
+	}
+}
 
 body {
-    font-family: "Noto Sans", sans-serif;
+	font-family: "Noto Sans", sans-serif;
 }
 
 .main {
-    background-color: darkgrey;
-    width: 100vw;
-    min-height: 100vh;
-    margin-top: auto;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    /* padding: 120px 24px 160px 24px; */
-    padding-top: auto;
-    padding-right: 24px;
-    padding-left: 24px;
-    pointer-events: auto;
+	background-color: darkgrey;
+	width: 100vw;
+	min-height: 100vh;
+	margin-top: auto;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	/* padding: 120px 24px 160px 24px; */
+	padding-top: auto;
+	padding-right: 24px;
+	padding-left: 24px;
+	pointer-events: auto;
 }
 .app {
-    @apply relative z-10 flex justify-center items-center 
+	@apply relative z-10 flex justify-center items-center 
     flex-col max-w-7xl mx-auto sm:px-16 px-6 mt-4;
 }
 
 .black_btn_nav {
-    @apply rounded-none border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm items-center justify-center w-1/2 ;
+	@apply rounded-none border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm items-center justify-center w-1/2;
 }
 
 .black_btn_prj {
-    @apply rounded-2xl border border-white bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black hover:border-black text-center text-sm items-center justify-center w-full ;
+	@apply rounded-2xl border border-white bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black hover:border-black text-center text-sm items-center justify-center w-full;
 }
 
 .dropdown {
-    @apply relative right-0 top-full mt-0 w-auto p-3 rounded-sm min-w-full flex flex-col gap-1 justify-end items-end z-20 bg-inherit;
-  }
+	@apply relative right-0 top-full mt-0 w-auto p-3 rounded-sm min-w-full flex flex-col gap-1 justify-end items-end z-20 bg-inherit;
+}
 
 .black_btn_card {
-    @apply rounded-2xl border border-white bg-black py-1.5 px-5 text-white hover:bg-gray-400 hover:text-black hover:border-black text-sm justify-between w-full flex flex-row ;
+	@apply rounded-2xl border border-white bg-black py-1.5 px-5 text-white hover:bg-gray-400 hover:text-black hover:border-black text-sm justify-between w-full flex flex-row;
+}
+
+.learn_btn {
+	@apply rounded-full border border-white bg-blue-600 py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm items-center justify-center w-auto;
 }
 
 .transition_time {
-    transition-duration: 500ms;
+	transition-duration: 500ms;
 }
 
 .transition_time_long {
-    transition-duration: 3000ms;
+	transition-duration: 3000ms;
 }
-
-
