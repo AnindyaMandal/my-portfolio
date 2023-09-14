@@ -53,7 +53,7 @@ const Nav = () => {
 	};
 
 	const poseUnlockerInfo: ProjectInfo = {
-		name: "Pose -> Phone Unlocker",
+		name: "Pose & Origami Phone Unlocker",
 		description:
 			"Our project his time was to design two phone unlock interfaces, one touch/gesture based, and the other using any of the other sensors that are available on a smartphone. Our first design approach was touch-based. The idea was to allow users to open their phones with a sequence of origami folds as passwords. Our second design approach was camera based. The idea was to use the teachable machine to train a model using our whole bodies as letters. These letters would be the letters for the passcode.",
 		vid_url:
