@@ -8,8 +8,12 @@ import { ProjectInfo } from "@/utils/ProjectInfo";
 const Nav = () => {
 	const [toggleProjects, setToggleProjects] = useState(false);
 
-	const test = () => {
-		console.log("Toogle projects: " + toggleProjects);
+	const waitBeforeCollapse = () => {
+		setTimeout(() => {
+			if (toggleProjects) {
+				setToggleProjects(false);
+			}
+		}, 3000);
 	};
 
 	const postureAlertInfo: ProjectInfo = {
@@ -48,8 +52,19 @@ const Nav = () => {
 		route_name: "HydroHomie",
 	};
 
+	const poseUnlockerInfo: ProjectInfo = {
+		name: "Pose -> Phone Unlocker",
+		description: "",
+		vid_url:
+			"https://www.youtube.com/embed/Cgz3YSwVtCY?si=YI1Z1-m1gPvNXVop",
+		route_name: "PhoneUnlocker",
+	};
+
 	return (
-		<nav className="w-full mb-0 pt-0 relative top-0 h-auto bg-zinc-800">
+		<nav
+			onMouseLeave={() => waitBeforeCollapse()}
+			className="w-full mb-0 pt-0 relative top-0 h-auto bg-zinc-800"
+		>
 			<div className="w-full justify-around">
 				<Link href="/Home">
 					<button type="button" className="black_btn_nav">
@@ -81,6 +96,8 @@ const Nav = () => {
 						<ProjectCard {...hydroHomieInfo} />
 
 						<ProjectCard {...sunHatInfo} />
+
+						<ProjectCard {...poseUnlockerInfo} />
 					</div>
 				)}
 			</div>

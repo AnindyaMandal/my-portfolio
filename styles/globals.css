@@ -61,3 +61,7 @@ body {
 .transition_time_long {
 	transition-duration: 3000ms;
 }
+
+.link-primary {
+	@apply text-blue-800 underline;
+}
