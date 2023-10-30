@@ -58,7 +58,7 @@ const ProjectCard = (info: ProjectInfo) => {
 				)}
 			</div>
 
-			{toggleExpandedCardView && (
+			{toggleExpandedCardView && info.vid_url != "" && (
 				<div className="">
 					<iframe
 						className="transition_time_long"

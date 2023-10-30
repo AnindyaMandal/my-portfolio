@@ -61,6 +61,14 @@ const Nav = () => {
 		route_name: "PhoneUnlocker",
 	};
 
+	const spotifyYoutubeTransfer: ProjectInfo = {
+		name: "Spotify To Youtube Playlist Transfer",
+		description:
+			"A simple tool to transfer your spotify playlist songs to YouTube",
+		vid_url: "",
+		route_name: "SpotifyYoutubePlaylistTransfer",
+	};
+
 	return (
 		<nav
 			// onMouseLeave={() => waitBeforeCollapse()}
@@ -99,6 +107,8 @@ const Nav = () => {
 						<ProjectCard {...sunHatInfo} />
 
 						<ProjectCard {...poseUnlockerInfo} />
+
+						<ProjectCard {...spotifyYoutubeTransfer} />
 					</div>
 				)}
 			</div>
