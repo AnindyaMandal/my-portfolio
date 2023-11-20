@@ -72,7 +72,7 @@ const Nav = () => {
 	return (
 		<nav
 			// onMouseLeave={() => waitBeforeCollapse()}
-			className="w-full mb-0 pt-0 relative top-0 h-auto bg-zinc-800"
+			className="mb-0 pt-0 relative top-0 h-auto w-auto bg-zinc-800"
 		>
 			<div className="w-full justify-around">
 				<Link href="/">

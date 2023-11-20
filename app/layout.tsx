@@ -9,7 +9,7 @@ export const metadata = {
 const layout = ({ children }: any) => {
 	return (
 		<html lang="en">
-			<body>
+			<body className=" w-full">
 				<Nav />
 				<main className="main">{children}</main>
 				{/* {children} */}
